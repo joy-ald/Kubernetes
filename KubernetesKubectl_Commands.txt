@@ -1,0 +1,22 @@
+
+kubectl create -f nginx-pod.yaml # create pod
+
+kubectl get pod # create pod
+
+
+kubectl get pod -o wide # IP and node info
+
+
+kubectl get pod nginx-pod -o yaml # version
+
+
+kubectl describe pod nginx-pod # display all info and events of a pod
+
+ping 10.0.0.0 # ping container IPaddress of pod from master node , 10.0.0.0 is the IP of the node
+
+kubectl exec -it nginx-pod -- /bin/sh #getting a shell to running 
+
+kubectl delete pd nginx-pod # delete the pod
+
+
+
